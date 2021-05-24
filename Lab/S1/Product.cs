@@ -7,73 +7,59 @@ namespace T2008M_AP.Lab.S1
     
     public class Product
     {
-    //các thuộc tính
-        public int id,qty;
-        public string name,image,desc;
-        public double price;
-        public List<string> gallery = new List<string>();
-    //constructors không có tham số 
+        public int id;
+        public string name;
+        public decimal price;
+        public int qty;
+        public string image;
+        public string description;
+        public List<string> gallery ;
+
         public Product()
         {
+            gallery = new List<string>();
         }
-    //constructors có tham số 
-        public Product(int id, int qty, string name, string image, string desc, double price)
+
+        public Product(int id, string name, decimal price, int qty, string image, string description)
         {
             this.id = id;
-            this.qty = qty;
             this.name = name;
-            this.image = image;
-            this.desc = desc;
             this.price = price;
+            this.qty = qty;
+            this.image = image;
+            this.description = description;
+            gallery = new List<string>();
         }
-    // Hiển thị ra toàn bộ thông tin của product
-    
+
         public void GetInfo()
         {
-            Console.WriteLine("Id : " + id );
-            Console.WriteLine("Name : " + name);
-            Console.WriteLine("Price : " + price);
-            Console.WriteLine("Qty : " + qty);
-            Console.WriteLine("Image : " + image);
-            Console.WriteLine("Desc : " + desc);
-        }
-    //Phương thức thông báo còn hàng hay hết hàng
-        public bool CheckQty(int qty)
-        {
-            return (qty>0)?true:false;
-        }
-    //Phương thức thêm ảnh vào gallery
-        public void AddImage(string img)
-        {
-            if (gallery.Count > 10)
-            {
-                Console.WriteLine("Ban phai xoa bot anh.");
-                DeleteImage();
-                HienThi();
-            }
-            else
-            {
-                gallery.Add(img);
-                Console.WriteLine("Them thanh cong");
-                HienThi();
-            }
+            Console.WriteLine("Ten sp: "+name);
+            Console.WriteLine("Gia: "+price);
+            Console.WriteLine("SL: "+qty);
         }
 
-        public void DeleteImage()
+        public void CheckQty()
         {
-            Console.Write("Ban muon xoa anh:");
-            var del = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(gallery[del]);
-            gallery.RemoveAt(del);
+            if (qty > 0)
+            {
+                Console.WriteLine("In stock");
+                return;
+            }
+            Console.WriteLine("Out of stock");
         }
 
-        public void HienThi()
+        public bool AddImage(string image)
         {
-            Console.WriteLine("Danh sach cac anh:");
-            foreach (var VARIABLE in gallery)
-            {
-                Console.WriteLine(VARIABLE);
-            }
+            if (gallery.Count >= 10)
+                return false;
+            gallery.Add(image);
+            return true;
+        }
+
+        public bool RemoveImage(string image)
+        {
+            gallery.Remove(image);
+            return true;
         }
     }
 }

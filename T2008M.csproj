@@ -38,12 +38,30 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Lab\s2\Diamon.cs" />
+        <Compile Include="Lab\s2\Fashion.cs" />
+        <Compile Include="Lab\s3\Cart.cs" />
+        <Compile Include="Lab\s5\Program.cs" />
+        <None Include="Session\s4\DemoDelegate.cs" />
+        <None Include="Session\s4\DemoDelegate2.cs" />
+        <None Include="Session\s4\Program.cs" />
+        <None Include="Lab\s3\Program.cs" />
+        <Compile Include="Lab\s4\KhachHang.cs" />
+        <Compile Include="Lab\s4\KhachHangNuocNgoai.cs" />
+        <Compile Include="Lab\s4\KhachHangVietNam.cs" />
+        <None Include="Lab\s4\Program.cs" />
+        <Compile Include="Session\s1\Student.cs" />
+        <Compile Include="Session\s2\Animal.cs" />
+        <Compile Include="Session\s2\Cat.cs" />
+        <Compile Include="Session\s2\IAnimal.cs" />
+        <Compile Include="Session\s2\ICat.cs" />
+        <Compile Include="Session\s3\Product.cs" />
+        <None Include="Session\s3\Program.cs" />
         <None Include="Program.cs" />
         <Compile Include="Lab\S1\Product.cs" />
-        <Compile Include="Lab\S1\Program.cs" />
+        <None Include="Lab\S1\Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <None Include="Session\Program.cs" />
-        <Compile Include="Session\Student.cs" />
+        <None Include="Session\s1\Program.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
