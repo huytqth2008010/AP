@@ -41,6 +41,7 @@
         <Compile Include="AssignmentOne\ClimateControl.cs" />
         <Compile Include="AssignmentOne\Clothing.cs" />
         <Compile Include="AssignmentOne\Program.cs" />
+        <Compile Include="AssignmentOne\Sports.cs" />
         <Compile Include="AssignmentOne\TrendSetting.cs" />
         <Compile Include="Lab\s2\Diamon.cs" />
         <Compile Include="Lab\s2\Fashion.cs" />
