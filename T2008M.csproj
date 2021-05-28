@@ -40,13 +40,20 @@
     <ItemGroup>
         <Compile Include="AssignmentOne\ClimateControl.cs" />
         <Compile Include="AssignmentOne\Clothing.cs" />
-        <Compile Include="AssignmentOne\Program.cs" />
+        <None Include="AssignmentOne\Program.cs" />
+        <Compile Include="AssignmentOne\Sports.cs" />
         <Compile Include="AssignmentOne\TrendSetting.cs" />
         <Compile Include="Lab\s2\Diamon.cs" />
         <Compile Include="Lab\s2\Fashion.cs" />
         <Compile Include="Lab\s3\Cart.cs" />
         <None Include="Lab\s5\Program.cs" />
         <None Include="Lab\s6\TimeBomb.cs" />
+        <Compile Include="Practical\Ex1\GeometryExample\Cylinder.cs" />
+        <Compile Include="Practical\Ex1\GeometryExample\Program.cs" />
+        <Compile Include="Practical\Ex2\Base.cs" />
+        <Compile Include="Practical\Ex2\Lion.cs" />
+        <None Include="Practical\Ex2\Program.cs" />
+        <Compile Include="Practical\Ex2\Tiger.cs" />
         <Compile Include="Session\se s5\Product.cs" />
         <None Include="Session\se s5\Program.cs" />
         <None Include="Session\s4\DemoDelegate.cs" />
@@ -67,8 +74,11 @@
         <None Include="Program.cs" />
         <Compile Include="Lab\S1\Product.cs" />
         <None Include="Lab\S1\Program.cs" />
-        <Compile Include="Properties\AssemblyInfo.cs" />
+        <None Include="Properties\AssemblyInfo.cs" />
         <None Include="Session\s1\Program.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Practical\Ex1" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
