@@ -41,7 +41,10 @@
         <Compile Include="Lab\s2\Diamon.cs" />
         <Compile Include="Lab\s2\Fashion.cs" />
         <Compile Include="Lab\s3\Cart.cs" />
-        <Compile Include="Lab\s5\Program.cs" />
+        <None Include="Lab\s5\Program.cs" />
+        <Compile Include="Lab\s6\TimeBomb.cs" />
+        <Compile Include="Session\se s5\Product.cs" />
+        <None Include="Session\se s5\Program.cs" />
         <None Include="Session\s4\DemoDelegate.cs" />
         <None Include="Session\s4\DemoDelegate2.cs" />
         <None Include="Session\s4\Program.cs" />
